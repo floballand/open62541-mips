@@ -84,6 +84,10 @@ if (NOT UA_ENABLE_AMALGAMATION OR (UA_ENABLE_AMALGAMATION AND NOT UA_AMALGAMATIO
     endif()
 endif()
 
+# feat : force mips architecture
+SET(CMAKE_SYSTEM_PROCESSOR mips)
+SET(CMAKE_C_COMPILER /usr/bin/mips-linux-gnu-gcc)
+
 #################
 # Build Options #
 #################
